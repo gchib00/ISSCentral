@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ISS Central</title>
+	<script src="script.js" defer></script> 
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   	integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   	crossorigin=""/>
+   	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   	integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   	crossorigin=""></script>
+   	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<img id="logo" src="images/logo.png">
+	</header>
+	<br>
+	<section id="main-section">
+		<div>
+			<h3 id="issVelocity">Current Velocity:</h3>
+			<button id="lockBtn">Enable Lock-on</button>
+		</div>
+		<div id="issMap"></div>
+		<div id="coordinates">
+			<p id="issLatitude">Latitude: 000000000000000</p>
+			<p id="issLongitude">Longitude: 000000000000000</p>
+		</div>
+	</section>
+</body>
+</html>
