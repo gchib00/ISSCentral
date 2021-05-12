@@ -85,4 +85,36 @@ header img {
   font-family: "Roboto", sans-serif;
 }
 
+#expedition65 {
+  text-align: center;
+  margin: 4rem 0rem 1rem 0rem;
+}
+
+#iss-crew {
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin: auto;
+}
+
+#crew {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 400px;
+  grid-template-rows: 60px repeat(7, 40px);
+}
+
+.grid-item {
+  text-align: center;
+  padding: 16px;
+  border: 2px solid black;
+}
+
+.grid-header {
+  text-align: center;
+  padding: 16px;
+  border: 3px solid black;
+}
+
 /*# sourceMappingURL=style.css.map */
