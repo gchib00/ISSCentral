@@ -52,11 +52,26 @@ header {
     margin-bottom: 3rem;
     overflow: hidden;
     border-bottom: 1px black solid;
-    img {
-    	position: relative;
-    	top: -3rem;
-    	left: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    #logo {
+    	height: 220px;
+    	margin-top: 0.5rem;
     }
+    .socmedia-icons {
+    	display: flex;
+    	justify-content: flex-start;
+    	flex-direction: row;
+    	margin-right: 1rem;
+    	.socmedia {
+    		height: 3.2rem;
+    		margin-right: 0.5rem;
+    		&:hover {
+    			opacity: 0.5;
+    		}
+    	}
+	}
 
 }
 #main-section {
@@ -102,21 +117,53 @@ header {
 	@include centerContent(row);
 	margin: auto;
 	margin-bottom: 3rem;
+
+}
+#expedition65-img {
+	max-height: 400px;
+	max-width: 340px;
+	margin-top: 2rem;
 }
 #crew-table {
 	margin-top: 2rem;
-	border: 3px black solid;
-	background-color: #fafafa;
+	border: 5px black solid;
+	border-left: 0px;
 	width: 600px;
 	height: 400px;
 	border-collapse: collapse;
+	@include mainfont;
+	tr th {
+		font-size: 1.1rem;
+		background-color: #e8e8e8;
+	}
 
-	tr td{
+	tr td {
 		border: 1px solid black;
+		border-left: 0px;
 		text-align: center;
+		background-color: #f5f5f5;
+	}
+	td:hover {
+		background-color: grey;
+		transition: 150ms;
 	}
 
 }
 #crew-col2 {
 	width: 60%;
+}
+
+@media (max-width: 860px) {
+	#main-section {
+		width: 760px;
+	}
+	#iss-crew {
+		width: 700px;
+		#crew-table {
+			width: 540px;
+		}
+		#expedition65-img {
+			width: 240px;
+		}
+	}
 }
