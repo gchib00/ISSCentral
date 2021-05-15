@@ -149,7 +149,22 @@ header .socmedia-icons .socmedia:hover {
   width: 60%;
 }
 
-@media (max-width: 860px) {
+@media (max-width: 1220px) {
+  #main-section {
+    width: 960px;
+  }
+
+  #iss-crew {
+    width: 760px;
+  }
+  #iss-crew #crew-table {
+    width: 540px;
+  }
+  #iss-crew #expedition65-img {
+    width: 240px;
+  }
+}
+@media (max-width: 970px) {
   #main-section {
     width: 760px;
   }
@@ -162,6 +177,102 @@ header .socmedia-icons .socmedia:hover {
   }
   #iss-crew #expedition65-img {
     width: 240px;
+  }
+}
+@media (max-width: 800px) {
+  #main-section {
+    width: 560px;
+    height: 400px;
+  }
+
+  #iss-crew {
+    width: 500px;
+    height: 300px;
+  }
+  #iss-crew #crew-table {
+    width: 340px;
+    height: 268px;
+    border: 3px black solid;
+  }
+  #iss-crew #crew-table tr th {
+    font-size: 1rem;
+  }
+  #iss-crew #crew-table tr td {
+    font-size: 0.9rem;
+    padding: 5px;
+  }
+  #iss-crew #expedition65-img {
+    width: 170px;
+  }
+}
+@media (max-width: 580px) {
+  #main-section {
+    width: 430px;
+    height: 460px;
+  }
+
+  #iss-crew {
+    width: 400px;
+    height: 300px;
+  }
+  #iss-crew #crew-table {
+    width: 280px;
+    height: 268px;
+    border: 3px black solid;
+  }
+  #iss-crew #crew-table tr th {
+    font-size: 0.9rem;
+  }
+  #iss-crew #crew-table tr td {
+    font-size: 0.8rem;
+    padding: 5px;
+  }
+  #iss-crew #expedition65-img {
+    width: 150px;
+  }
+}
+@media (max-width: 450px) {
+  #main-section {
+    width: 340px;
+    height: 500px;
+  }
+
+  #iss-crew {
+    width: 300px;
+    height: 283px;
+  }
+  #iss-crew #crew-table {
+    width: 210px;
+    height: 188px;
+    border: 2px black solid;
+  }
+  #iss-crew #crew-table tr th {
+    font-size: 0.75rem;
+  }
+  #iss-crew #crew-table tr td {
+    font-size: 0.7rem;
+    padding: 5px;
+  }
+  #iss-crew #expedition65-img {
+    width: 120px;
+  }
+
+  #logo {
+    height: 160px !important;
+  }
+
+  .socmedia {
+    height: 2.5rem !important;
+  }
+
+  #issVelocity {
+    font-size: 0.9rem;
+  }
+
+  #lockBtn {
+    margin-bottom: 1rem;
+    width: 105px;
+    font-size: 0.7rem;
   }
 }
 

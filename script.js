@@ -51,7 +51,7 @@ async function trackISS(){
 
 setInterval(function(){
 	trackISS()
-},20000)
+},2000)
 
 
 
