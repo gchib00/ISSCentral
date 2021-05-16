@@ -29,7 +29,7 @@ async function trackISS(){
 	const response = await fetch(iss_url)
 	const iss_data = await response.json()
 
-	let {longitude, latitude, velocity} = iss_data
+	let {longitude, latitude, velocity, altitude} = iss_data
 
 	lat = latitude;
 	lng = longitude;
@@ -43,9 +43,13 @@ async function trackISS(){
 	}
 
 
-	document.getElementById("issVelocity").textContent = "Current Velocity: "+velocity.toFixed(2)+" km/h"
+	// document.getElementById("issVelocity").textContent = "Velocity: "+velocity.toFixed(2)+" km/h"
+	// document.getElementById("issAltitude").textContent = "Altitude: "+altitude.toFixed(2)+" km"
+	document.getElementById("showVelocity").textContent = velocity.toFixed(2)+" km/h"
+	document.getElementById("showAltitude").textContent = altitude.toFixed(2)+" km"
 	document.getElementById("issLatitude").textContent = "Latitude: "+lat+"°"
 	document.getElementById("issLongitude").textContent = "Longitude: "+lng+"°"
+
 }
 
 

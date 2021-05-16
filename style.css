@@ -51,8 +51,18 @@ header .socmedia-icons .socmedia:hover {
   align-items: baseline;
 }
 
-#issVelocity {
+.displayData {
   font-family: "Roboto", sans-serif;
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#showVelocity, #showAltitude {
+  font-weight: none;
+  margin-left: 0.4rem;
 }
 
 #lockBtn {
@@ -265,7 +275,7 @@ header .socmedia-icons .socmedia:hover {
     height: 2.5rem !important;
   }
 
-  #issVelocity {
+  .displayData {
     font-size: 0.9rem;
   }
 
